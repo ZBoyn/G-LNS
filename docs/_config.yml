@@ -1,0 +1,35 @@
+title: "G-LNS: Generative Evolutionary Framework for Large Neighborhood Search"
+description: "Generative evolutionary framework that extends LLM-based AHD to the automated design of Large Neighborhood Search (LNS) operators"
+baseurl: "/G-LNS"
+url: "https://github.io"
+
+# Author information
+author:
+  name: "G-LNS Team"
+  email: ""
+
+# Repository information
+repository: "user/G-LNS"
+
+# SEO settings
+lang: "en"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+
+sass:
+  style: compressed
+  sass_dir: assets/css

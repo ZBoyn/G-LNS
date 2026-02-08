@@ -1,4 +1,4 @@
-# G-LNS: Generative Evolutionary Framework for Large Neighborhood Search
+# G-LNS: Generative Large Neighborhood Search for LLM-Based Automatic Heuristic Design
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
@@ -7,7 +7,7 @@
 
 While Large Language Models (LLMs) have recently shown promise in Automated Heuristic Design (AHD), existing approaches typically formulate AHD around constructive priority rules or parameterized local search guidance, thereby restricting the search space to fixed heuristic forms. Such designs offer limited capacity for structural exploration, making it difficult to escape deep local optima in complex Combinatorial Optimization Problems (COPs). 
 
-In this work, we propose **G-LNS**, a generative evolutionary framework that extends LLM-based AHD to the automated design of **Large Neighborhood Search (LNS)** operators. Unlike prior methods that evolve heuristics in isolation, G-LNS leverages LLMs to co-evolve tightly coupled pairs of *destroy* and *repair* operators. A cooperative evaluation mechanism explicitly captures their interaction, enabling the discovery of complementary operator logic that jointly performs effective structural disruption and reconstruction. Extensive experiments on challenging COP benchmarks, such as **Traveling Salesman Problems (TSP)** and **Capacitated Vehicle Routing Problems (CVRP)**, demonstrate that G-LNS significantly outperforms LLM-based AHD methods as well as strong classical solvers.
+In this work, we propose **G-LNS**, a generative evolutionary framework that extends LLM-based AHD to the automated design of **Large Neighborhood Search (LNS)** operators. Unlike prior methods that evolve heuristics in isolation, G-LNS leverages LLMs to co-evolve tightly coupled pairs of *destroy* and *repair* operators. A cooperative evaluation mechanism explicitly captures their interaction, enabling the discovery of complementary operator logic that jointly performs effective structural disruption and reconstruction. Extensive experiments on challenging COP benchmarks, such as **Traveling Salesman Problems (TSP)** and **Capacitated Vehicle Routing Problems (CVRP)**, demonstrate that G-LNS significantly outperforms LLM-based AHD methods as well as strong classical solvers. The discovered heuristics not only achieve near-optimal solutions with reduced computational budgets but also exhibit robust generalization across diverse and unseen instance distributions.
 
 ![Motivation](figures/introduction.png)
 

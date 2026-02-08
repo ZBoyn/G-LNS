@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-LNS: Generative Large Neighborhood Search for LLM-Based Automatic Heuristic Design</title>
+    
+    <meta name="description" content="Generative evolutionary framework that extends LLM-based AHD to the automated design of Large Neighborhood Search (LNS) operators">
+    <meta name="keywords" content="LLM, Large Neighborhood Search, Evolutionary Computation, Combinatorial Optimization, TSP, CVRP">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/style.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-network-wired"></i>
+                <span>G-LNS</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#abstract" class="nav-link">Abstract</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#usage" class="nav-link">Usage</a>
+                <a href="https://github.com/Zboyn/G-LNS" class="nav-link github-link" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 class="main-title">
+                <span class="title-primary">G-LNS: Generative Large Neighborhood Search for LLM-Based Automatic Heuristic Design</span>
+            </h1>
+            
+            <div class="authors">
+                <span class="author">
+                    Baoyun Zhao<sup>1</sup>
+                    <span class="author-links">
+                    <a href="https://github.com/zboyn" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </span>
+                <span class="author">
+                    He Wang<sup>2,3</sup>
+                    <span class="author-links">
+                        <a href="https://iphysresearch.github.io/blog/about/" target="_blank" title="Personal Website">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                        <a href="https://github.com/iphysresearch" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </span>
+                </span>
+                <span class="author">
+                    Liang Zeng<sup>4</sup>
+                    <span class="author-links">
+                        <a href="https://scholar.google.com/citations?user=yG8fNjIAAAAJ" target="_blank" title="Google Scholar">
+                            <i class="fas fa-graduation-cap"></i>
+                        </a>
+                    </span>
+                </span>
+            </div>
+
+            <!-- Affiliations -->
+            <div class="affiliations">
+                <div class="affiliation"><sup>1</sup> Software College, Northeastern University</div>
+                <div class="affiliation"><sup>2</sup> International Centre for Theoretical Physics Asia-Pacific, University of Chinese Academy of Sciences</div>
+                <div class="affiliation"><sup>3</sup> Taiji Laboratory for Gravitational Wave Universe, University of Chinese Academy of Sciences</div>
+                <div class="affiliation"><sup>4</sup> Tsinghua University</div>
+            </div>
+            
+            <div class="action-buttons">
+                <!-- Replace # with actual arXiv link if available -->
+                <a href="#" class="btn btn-paper">
+                    <i class="fas fa-file-pdf"></i> ArXiv Paper
+                </a>
+                <a href="https://github.com/Zboyn/G-LNS" class="btn btn-code" target="_blank">
+                    <i class="fab fa-github"></i> Code
+                </a>
+                <a href="#gallery" class="btn btn-gallery">
+                    <i class="fas fa-images"></i> Gallery
+                </a>
+            </div>
+            
+            <div class="tagline">
+                <strong>Co-evolving "Destroy" and "Repair" operators with LLMs for Structural Algorithmic Innovation in Combinatorial Optimization.</strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- Abstract Section -->
+    <section id="abstract" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center;">Abstract</h2>
+            <div class="abstract-content">
+                <p>
+                    While Large Language Models (LLMs) have recently shown promise in Automated Heuristic Design (AHD), existing approaches typically formulate AHD around constructive priority rules or parameterized local search guidance, thereby restricting the search space to fixed heuristic forms. Such designs offer limited capacity for structural exploration, making it difficult to escape deep local optima in complex Combinatorial Optimization Problems (COPs).
+                </p>
+                <p>
+                    In this work, we propose <strong>G-LNS</strong>, a generative evolutionary framework that extends LLM-based AHD to the automated design of <strong>Large Neighborhood Search (LNS)</strong> operators. Unlike prior methods that evolve heuristics in isolation, G-LNS leverages LLMs to co-evolve tightly coupled pairs of <em>destroy</em> and <em>repair</em> operators. A cooperative evaluation mechanism explicitly captures their interaction, enabling the discovery of complementary operator logic that jointly performs effective structural disruption and reconstruction. Extensive experiments on challenging COP benchmarks, such as <strong>Traveling Salesman Problems (TSP)</strong> and <strong>Capacitated Vehicle Routing Problems (CVRP)</strong>, demonstrate that G-LNS significantly outperforms LLM-based AHD methods as well as strong classical solvers. The discovered heuristics not only achieve near-optimal solutions with reduced computational budgets but also exhibit robust generalization across diverse and unseen instance distributions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--  Gallery -->
+    <section id="gallery" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center;">Gallery</h2>
+            
+            <div class="gallery-container">
+                <button class="gallery-nav-btn prev-btn" onclick="previousSlide()">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <div class="gallery-wrapper">
+                    <div class="gallery-track" id="galleryTrack">
+                    </div>
+                </div>
+                
+                <button class="gallery-nav-btn next-btn" onclick="nextSlide()">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Usage / Quick Start -->
+    <section id="usage" class="section">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center;">Quick Start</h2>
+            
+            <div class="usage-content" style="max-width: 800px; margin: 0 auto;">
+                <h3>Configuration</h3>
+                <p>Create a <code>.env</code> file in the root directory to configure your LLM API.</p>
+                <div class="code-block">
+                    <div class="code-header">
+                        <span>.env</span>
+                        <button class="copy-btn" onclick="copyCode(this)">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </div>
+                    <pre><code>DEESEEK_API_HOST=https://api.deepseek.com
+DEESEEK_API_KEY=your_api_key_here
+DEESEEK_API_MODEL=deepseek-chat</code></pre>
+                </div>
+
+                <h3>Running Experiments</h3>
+                <p>To run G-LNS on the Traveling Salesman Problem (TSP):</p>
+                <div class="code-block">
+                    <div class="code-header">
+                        <span>bash</span>
+                        <button class="copy-btn" onclick="copyCode(this)">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </div>
+                    <pre><code>python examples/tsp/run_tsp.py</code></pre>
+                </div>
+                <p>The logs and generated operators will be saved in <code>examples/tsp/logs/</code>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 style="color: #f8fafc; margin-bottom: 1rem;">G-LNS: Generative Large Neighborhood Search for LLM-Based Automatic Heuristic Design</h4>
+                    <p style="font-size: 0.9rem; max-width: 600px; margin: 0 auto; line-height: 1.6;">
+                        Generative evolutionary framework that extends LLM-based AHD to the automated design of Large Neighborhood Search (LNS) operators.
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom" style="margin-top: 2rem; border-top: 1px solid #334155; padding-top: 1rem;">
+                <p>&copy; 2026 G-LNS Research Team. Licensed under MIT License.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="">
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="assets/script.js"></script>
+</body>
+</html>
