@@ -1,3 +1,6 @@
+
+</think>
+
 # G-LNS: Generative Large Neighborhood Search for LLM-Based Automatic Heuristic Design
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -34,7 +37,7 @@ The G-LNS framework operates in a cyclic process consisting of four phases:
 - **```base/```**: Base classes
 - **```datasets/```**: Dataset generation
 - **```examples/```**: Training scripts and configurations
-- **```heuristics/```**: Huristics designed by G-LNS
+- **```heuristics/```**: Heuristics designed by G-LNS
 - **```task/```**: Problem definitions and interfaces
 - **```tools/```**: Utilities (LLM API, Profiler, etc.)
 
